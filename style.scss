@@ -1,0 +1,188 @@
+$primary: #023047;
+$secondary: #002a3f;
+$green: #52b788;
+$yellow: #dddf00;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.homepage {
+    background-color: $primary;
+    height: 100vh;
+}
+
+nav {
+    height: 60px;
+    margin: auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}   h1{
+    color: $green;
+}
+
+ul  {
+    width: 50%;
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around;
+}  li {
+    color: $green;
+} li:hover {
+    cursor: pointer;
+    color: $yellow;
+    transition: 1s;
+}
+
+.homeContainer {
+    // border: 2px solid white;
+    padding: 0 25px ;
+    margin: auto;
+    width: 60%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  .introText {
+    color: $green;
+    text-align: center;
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+        line-height: 2rem;
+    }
+}   button {
+    color: black;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: $yellow;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 500ms;
+}
+
+
+.portfolio{
+    background-color: $secondary;
+    padding: 140px 0;
+
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 100px;
+        color: $green;
+}  
+
+
+} .portfolioContainer {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .leftBox, .centreBox, .rightBox {
+        height: 400px;
+        padding: 20px;
+        flex-grow: 1;
+        flex-basis: 300px;
+        background: $primary;
+        text-align: center;
+        border: 2px solid $green;
+        border-radius: 30px;
+        // box-shadow: 1px 2px 5px #ffffff;
+
+        .imageContainer img {
+            width: 200px;
+            padding: 10px 0;
+        }
+
+        h3 {
+            color: $green;
+            padding-top: 20px;
+        }
+    
+        button {
+            font-weight: bold;
+            color: black;
+            width: 100px;
+            height: 35px;
+            border-radius: 20px;
+            background-color: $yellow;
+        }
+    
+        p{
+            color: #ffffff;
+            padding: 15px;
+        }
+    }
+}
+
+.about {
+        background-color: $primary;
+        height: 100vh;
+
+        .aboutTextContainer {
+            margin: auto;
+            width: 75%;
+        }
+
+        h2 {
+            padding-top: 10%;
+            font-size: 2.5rem;
+            text-align: center;
+            padding-bottom: 100px;
+            color: $green;
+    }
+
+    p {
+        font-size: 1.25rem;
+        text-align: center;
+        color: $green;
+        line-height: 2.5rem;
+    }
+}
+
+
+.contact {
+    background-color: $secondary;
+    height: 100vh;
+
+    .aboutTextContainer {
+        margin: auto;
+        width: 75%;
+    }
+
+    h2 {
+        padding-top: 10%;
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 100px;
+        color: $green;
+} 
+
+    p {
+        font-size: 1.25rem;
+        text-align: center;
+        color: $green;
+        line-height: 2.5rem;
+    }
+}

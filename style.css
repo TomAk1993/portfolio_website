@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.homepage {
+  background-color: #023047;
+  height: 100vh;
+}
+
+nav {
+  height: 60px;
+  margin: auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  color: #52b788;
+}
+
+ul {
+  width: 50%;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+li {
+  color: #52b788;
+}
+
+li:hover {
+  cursor: pointer;
+  color: #dddf00;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.homeContainer {
+  padding: 0 25px;
+  margin: auto;
+  width: 60%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.introText {
+  color: #52b788;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.introText h3 {
+  line-height: 2rem;
+}
+
+button {
+  color: black;
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #dddf00;
+}
+
+button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.portfolio {
+  background-color: #002a3f;
+  padding: 140px 0;
+}
+
+.portfolio h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 100px;
+  color: #52b788;
+}
+
+.portfolioContainer {
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+}
+
+.portfolioContainer .leftBox, .portfolioContainer .centreBox, .portfolioContainer .rightBox {
+  height: 400px;
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+  background: #023047;
+  text-align: center;
+  border: 2px solid #52b788;
+  border-radius: 30px;
+}
+
+.portfolioContainer .leftBox .imageContainer img, .portfolioContainer .centreBox .imageContainer img, .portfolioContainer .rightBox .imageContainer img {
+  width: 200px;
+  padding: 10px 0;
+}
+
+.portfolioContainer .leftBox h3, .portfolioContainer .centreBox h3, .portfolioContainer .rightBox h3 {
+  color: #52b788;
+  padding-top: 20px;
+}
+
+.portfolioContainer .leftBox button, .portfolioContainer .centreBox button, .portfolioContainer .rightBox button {
+  font-weight: bold;
+  color: black;
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #dddf00;
+}
+
+.portfolioContainer .leftBox p, .portfolioContainer .centreBox p, .portfolioContainer .rightBox p {
+  color: #ffffff;
+  padding: 15px;
+}
+
+.about {
+  background-color: #023047;
+  height: 100vh;
+}
+
+.about .aboutTextContainer {
+  margin: auto;
+  width: 75%;
+}
+
+.about h2 {
+  padding-top: 10%;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 100px;
+  color: #52b788;
+}
+
+.about p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #52b788;
+  line-height: 2.5rem;
+}
+
+.contact {
+  background-color: #002a3f;
+  height: 100vh;
+}
+
+.contact .aboutTextContainer {
+  margin: auto;
+  width: 75%;
+}
+
+.contact h2 {
+  padding-top: 10%;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 100px;
+  color: #52b788;
+}
+
+.contact p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #52b788;
+  line-height: 2.5rem;
+}
+/*# sourceMappingURL=style.css.map */
