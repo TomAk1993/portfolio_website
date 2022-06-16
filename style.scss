@@ -100,10 +100,10 @@ button:hover {
     gap: 50px;
 
     .leftBox, .centreBox, .rightBox {
-        height: 400px;
+        height: 420px;
         padding: 20px;
         flex-grow: 1;
-        flex-basis: 300px;
+        flex-basis: 275px;
         background: $primary;
         text-align: center;
         border: 2px solid $green;
@@ -117,7 +117,7 @@ button:hover {
 
         h3 {
             color: $green;
-            padding-top: 20px;
+            padding: 8px 0;
         }
     
         button {
@@ -139,7 +139,6 @@ button:hover {
 .about {
         background-color: $primary;
         height: 100vh;
-
         .aboutTextContainer {
             margin: auto;
             width: 75%;
@@ -165,7 +164,6 @@ button:hover {
 .contact {
     background-color: $secondary;
     height: 100vh;
-
     .aboutTextContainer {
         margin: auto;
         width: 75%;
@@ -184,5 +182,46 @@ button:hover {
         text-align: center;
         color: $green;
         line-height: 2.5rem;
+        
+    }
+}
+
+.toTop {
+    background: $green;
+    position: fixed;
+    bottom: 300px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.toTop.active {
+    bottom: 30px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.toTop:hover {
+    cursor: pointer;
+}
+
+
+@media all and (max-width: 560px ) {
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 407px ) {
+    .about p {
+        font-size: 0.8rem;
     }
 }
