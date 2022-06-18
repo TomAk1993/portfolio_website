@@ -6,12 +6,10 @@ links.forEach((link) => {
 
         let el = document.getElementById(link.getAttribute("data-link"));
        el.scrollIntoView({behavior:"smooth", block: "start"})
-       link.stopPropagation();
-       
-    }) 
-}); 
 
-
+            
+    })
+});
 
 
 // Button to get users back to the top of the webpage 
