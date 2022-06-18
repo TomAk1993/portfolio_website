@@ -162,43 +162,22 @@ button:hover {
   padding: 8px 0;
 }
 
-.portfolioContainer .leftBox button, .portfolioContainer .centreBox button, .portfolioContainer .rightBox button {
+.portfolioContainer .leftBox a, .portfolioContainer .centreBox a, .portfolioContainer .rightBox a {
+  text-decoration: none;
+  padding: 5px 20px;
   font-weight: bold;
   color: black;
-  width: 100px;
-  height: 35px;
   border-radius: 20px;
   background-color: #dddf00;
+}
+
+.portfolioContainer .leftBox a:hover, .portfolioContainer .centreBox a:hover, .portfolioContainer .rightBox a:hover {
+  background-color: #52b788;
 }
 
 .portfolioContainer .leftBox p, .portfolioContainer .centreBox p, .portfolioContainer .rightBox p {
   color: #ffffff;
   padding: 15px;
-}
-
-.about {
-  background-color: #023047;
-  height: 100vh;
-}
-
-.about .aboutTextContainer {
-  margin: auto;
-  width: 75%;
-}
-
-.about h2 {
-  padding-top: 10%;
-  font-size: 2.5rem;
-  text-align: center;
-  padding-bottom: 100px;
-  color: #52b788;
-}
-
-.about p {
-  font-size: 1.25rem;
-  text-align: center;
-  color: #52b788;
-  line-height: 2.5rem;
 }
 
 .contact {
@@ -270,5 +249,6 @@ button:hover {
   .about p {
     font-size: 0.8rem;
   }
+
 }
 /*# sourceMappingURL=style.css.map */
