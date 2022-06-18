@@ -120,13 +120,17 @@ button:hover {
             padding-top: 20px;
         }
     
-        button {
+        a {
+            text-decoration: none;
+            padding: 5px 20px;
             font-weight: bold;
             color: black;
-            width: 100px;
-            height: 35px;
             border-radius: 20px;
             background-color: $yellow;
+        }
+
+        a:hover {
+            background-color: #52b788;
         }
     
         p{
@@ -136,30 +140,6 @@ button:hover {
     }
 }
 
-.about {
-        background-color: $primary;
-        height: 100vh;
-
-        .aboutTextContainer {
-            margin: auto;
-            width: 75%;
-        }
-
-        h2 {
-            padding-top: 10%;
-            font-size: 2.5rem;
-            text-align: center;
-            padding-bottom: 100px;
-            color: $green;
-    }
-
-    p {
-        font-size: 1.25rem;
-        text-align: center;
-        color: $green;
-        line-height: 2.5rem;
-    }
-}
 
 
 .contact {
@@ -184,5 +164,9 @@ button:hover {
         text-align: center;
         color: $green;
         line-height: 2.5rem;
+    }
+
+    a{
+        color: $green;
     }
 }
