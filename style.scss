@@ -43,6 +43,22 @@ ul  {
     transition: 1s;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: $green;
+}
+
+
 .homeContainer {
     // border: 2px solid white;
     padding: 0 25px ;
@@ -56,26 +72,15 @@ ul  {
     color: $green;
     text-align: center;
     display: flex;
-    height: 70%;
+    height: 65%;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    h3 {
-        line-height: 2rem;
-    }
-}   button {
-    color: black;
-    width: 150px;
-    height: 35px;
-    border-radius: 20px;
-    background-color: $yellow;
-}
 
-button:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 500ms;
-}
+    h3 {
+        line-height: 2.5rem;
+    }
+}  
 
 
 .portfolio{
@@ -166,48 +171,8 @@ button:hover {
         line-height: 2.5rem;
         
     }
-}
 
-.toTop {
-    background: $green;
-    position: fixed;
-    bottom: 300px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.5rem;
-    pointer-events: none;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.toTop.active {
-    bottom: 30px;
-    pointer-events: auto;
-    opacity: 1;
-}
-
-.toTop:hover {
-    cursor: pointer;
-}
-
-
-@media all and (max-width: 560px ) {
-    .about p {
-        font-size: 1rem;
-    }
-}
-
-@media all and (max-width: 407px ) {
-    .about p {
-        font-size: 0.8rem;
-    }
-
-    a{
+    a {
         color: $green;
     }
 }
@@ -237,16 +202,60 @@ button:hover {
 
 .toTop:hover {
     cursor: pointer;
-} 
+}
+
 
 @media all and (max-width: 560px ) {
-    .about p {
-        font-size: 1rem;
+    .introText h3 {
+        font-size: 0.8rem;
+    }
+     .introText {
+        height: 75%;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg) ;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg) ;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: $secondary;
+        width: 100%;
+        text-align: center;
+        transition: 0.5s;
+    }
+
+    .navLink {
+        margin: 30px;
+    }
+
+    .nav-menu.active {
+        left: 0;
     }
 }
 
-@media all and (max-width: 407px ) {
-    .about p {
-        font-size: 0.8rem;
+@media all and (max-width: 370px ) {
+    .introText h3 {
+        font-size: 0.6rem;
+    }
+}
+
+@media all and (max-width: 317px ) {
+    .introText h3 {
+        font-size: 0.4rem;
     }
 }
