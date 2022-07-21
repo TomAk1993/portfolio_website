@@ -60,7 +60,6 @@ ul  {
 
 
 .homeContainer {
-    // border: 2px solid white;
     padding: 0 25px ;
     margin: auto;
     width: 60%;
@@ -145,35 +144,56 @@ ul  {
     }
 }
 
-
-
-
 .contact {
     background-color: $secondary;
     height: 100vh;
-    .aboutTextContainer {
-        margin: auto;
-        width: 75%;
-    }
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     h2 {
-        padding-top: 10%;
         font-size: 2.5rem;
         text-align: center;
-        padding-bottom: 100px;
         color: $green;
-} 
-
-    p {
-        font-size: 1.25rem;
-        text-align: center;
-        color: $green;
-        line-height: 2.5rem;
-        
     }
+} form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+    padding: 20px;
+    border-radius: 25px;
+    input {
+        padding: 15px;
+        height: 30px;
+        width: 350px;
+        margin-top: 25px;
+        border: 1px solid $secondary;
+        border-radius: 15px;
+    } textarea {
+        padding: 15px;
+        width: 350px;
+        margin: auto;
+        margin: 25px 0;
+        border: 1px solid $secondary;
+        border-radius: 15px;
+    } .button {
+        width: 80px;
+        height: 30px;
+        background-color: $yellow;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.9rem;
+        font-weight: bold;
+        padding: 0;
 
-    a {
-        color: $green;
+    } .button:hover{
+        cursor: pointer;
+        opacity: 80%;
+        transition: 0.3s;
     }
 }
 
@@ -230,32 +250,40 @@ ul  {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 60px; // -60px to take of the height of the header
         gap: 0;
         flex-direction: column;
         background-color: $secondary;
         width: 100%;
+        height: 95vh;
         text-align: center;
         transition: 0.5s;
-    }
-
-    .navLink {
-        margin: 30px;
     }
 
     .nav-menu.active {
         left: 0;
     }
+
+    .contact input {
+        width: 200px;
+    } 
+    .contact textarea {
+        width: 200px;
+    }
+
 }
 
-@media all and (max-width: 370px ) {
+@media all and (max-width: 375px ) {
     .introText h3 {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
+    }
+    .homeContainer {
+        width: 100%;
     }
 }
 
 @media all and (max-width: 317px ) {
     .introText h3 {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 }

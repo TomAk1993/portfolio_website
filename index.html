@@ -79,21 +79,41 @@
 
     <div class="contact" id="Contact">
 
-        <div class="contactTextContainer">
         <h2>Contact</h2>
-        <p>Email: tomak160@gmail.com</p>
-        <p>Phone: 07923380327</p>
-        <p><a href="https://www.linkedin.com/in/tom-akoslovski-a49a71241/">Contact me on Linkedin</a></p>
-        </div>
-    </div>
+            <form id="contact-form">
 
+                <input type="hidden" name="contact_number">
+                <input type="text" name="user_name" placeholder="Full Name" required>
+                <input type="email"  name="user_email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="10"></textarea>
+                <input type="submit" value="Send" class="button">
+            </form>
+
+    </div>
 
     <div class="toTop">
         <p>&#8679;</p>
     </div>
-
-
-
     <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('dyH4BNIiQ9TPnehCg');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm("service_zmasrvh","template_lrh2ppo", this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
