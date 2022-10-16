@@ -11,6 +11,12 @@ links.forEach((link) => {
     })
 });
 
+const projects = document.getElementById('projectsButton');
+projects.addEventListener('click', () => {
+    let pro = document.getElementById(projects.getAttribute("data-link"));
+       pro.scrollIntoView({behavior:"smooth", block: "start"})
+
+})
 
 // Button to get users back to the top of the webpage 
 
