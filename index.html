@@ -28,12 +28,15 @@
         <div class="homeContainer">
             <div class="introText">
                 <h2>Hey, I'm Tom</h2>
-                     <h3>I'm a passionate and enthusiastic web developer who is always developing his skills to take to the next level, I have experience in HTML5, CSS / SCSS, Javascript. <br>
-                    I also have knowledge of the backend and the MERN stack, with technolgoys such as: NodeJS, Mongoose, Express and React.</h3>
-
+                     <h3>I'm a passionate and enthusiastic <span> Web Developer</span> and am always developing his skills to take to the next level, I have excellent in HTML5 CSS & Javascript. <br>
+                    I also have knowledge of NodeJS, MongoDB, Mongoose, Express and React.</h3>
+    
+            <img class="computerimage" src="/portfolio_website/images/code.png" alt="code image">
+            <button id="projectsButton" data-link="Portfolio"  >View my Projects</button>
             </div>
         </div>   
     </div>
+
     <div class="portfolio" id="Portfolio" >
         <h2>Portfolio</h2>
         <div class="portfolioContainer">
@@ -50,7 +53,7 @@
                 <a href="https://github.com/TomAk1993/Score-Keeper2">GitHub</a>
             </div>
             <div class="centreBox">
-                <h3>Happy Diary Application</h3>
+                <h3>Happy Diary Applicationnn</h3>
                 <div class="imageContainer"> 
 
                     <img src="images/happy_diary.jpg" alt="">
@@ -86,7 +89,7 @@
                 <input type="text" name="user_name" placeholder="Full Name" required>
                 <input type="email"  name="user_email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" rows="10"></textarea>
-                <input type="submit" value="Send" class="button">
+                <input type="submit" value="Send" class="emailButton">
             </form>
 
     </div>
@@ -109,6 +112,7 @@
                 emailjs.sendForm("service_zmasrvh","template_lrh2ppo", this)
                     .then(function() {
                         console.log('SUCCESS!');
+                        alert('Email Sent')
                     }, function(error) {
                         console.log('FAILED...', error);
                     });

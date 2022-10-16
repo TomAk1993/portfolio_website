@@ -24,9 +24,9 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 h1 {
@@ -50,8 +50,8 @@ li {
 li:hover {
   cursor: pointer;
   color: #dddf00;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .hamburger {
@@ -70,10 +70,6 @@ li:hover {
 }
 
 .homeContainer {
-  padding: 0 25px;
-  margin: auto;
-  width: 60%;
-  height: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,15 +79,21 @@ li:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 25px;
+  margin: auto;
+  width: 85%;
+  height: 85%;
 }
 
 .introText {
+  padding: 50px;
   color: #52b788;
+  font-size: 1.5rem;
   text-align: center;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 65%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -104,8 +106,40 @@ li:hover {
           align-items: center;
 }
 
+.introText h2 {
+  color: #dddf00;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.introText span {
+  color: #dddf00;
+}
+
 .introText h3 {
   line-height: 2.5rem;
+  font-size: 1.3rem;
+}
+
+.introText .computerimage {
+  width: 400px;
+  height: 300px;
+}
+
+.introText #projectsButton {
+  font-size: 1rem;
+  padding: 7px 20px;
+  color: black;
+  border-radius: 20px;
+  background-color: #dddf00;
+}
+
+.introText #projectsButton:hover {
+  cursor: pointer;
+  background-color: #52b788;
+  -webkit-transition: 500ms;
+  transition: 500ms;
 }
 
 .portfolio {
@@ -180,7 +214,7 @@ li:hover {
 }
 
 .contact {
-  background-color: #002a3f;
+  background-color: #023047;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,7 +273,7 @@ form textarea {
   border-radius: 15px;
 }
 
-form .button {
+form .emailButton {
   width: 80px;
   height: 30px;
   background-color: #dddf00;
@@ -258,7 +292,7 @@ form .button {
   padding: 0;
 }
 
-form .button:hover {
+form .emailButton:hover {
   cursor: pointer;
   opacity: 80%;
   -webkit-transition: 0.3s;
@@ -297,6 +331,12 @@ form .button:hover {
 
 .toTop:hover {
   cursor: pointer;
+}
+
+@media all and (max-width: 860px) {
+  .computerimage {
+    display: none;
+  }
 }
 
 @media all and (max-width: 560px) {
