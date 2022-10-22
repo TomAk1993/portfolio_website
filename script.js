@@ -35,6 +35,8 @@ toTop.addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
 });  
 
+// Hamburger menu nav bar
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
