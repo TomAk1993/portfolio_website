@@ -12,13 +12,10 @@
     scroll-behavior: smooth;
 }
 
-body {
+html, body {
+    overflow: hidden;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-}
-body, html {
-    overflow-x: hidden;
-
 }
 
 .max-width {
