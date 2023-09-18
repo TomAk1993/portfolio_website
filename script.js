@@ -1,51 +1,24 @@
-// This is the nav-bar scroll section
+const barTop = document.getElementById('bar-one');
+const barBottom = document.getElementById('bar-three');
+const hamburger = document.getElementById('hamburger');
+const centerBar = document.getElementById('bar-two');
+const navMenu = document.getElementById('nav-menu');
+const navLink = document.querySelectorAll('.nav-link');
 
-const links = document.querySelectorAll('.navLink');
-links.forEach((link) => {
-    link.addEventListener('click', () => {
-
-        let el = document.getElementById(link.getAttribute("data-link"));
-       el.scrollIntoView({behavior:"smooth", block: "start"})
-
-            
-    })
+// Hamburger Animations
+hamburger.addEventListener('click', () => {
+    barTop.classList.toggle('rotate-right');
+    barBottom.classList.toggle('rotate-left');
+    centerBar.classList.toggle('disappear');
+    navMenu.classList.toggle('nav-active');
 });
 
-const projects = document.getElementById('projectsButton');
-projects.addEventListener('click', () => {
-    let pro = document.getElementById(projects.getAttribute("data-link"));
-       pro.scrollIntoView({behavior:"smooth", block: "start"})
-
-})
-
-// Button to get users back to the top of the webpage 
-
-const toTop = document.querySelector('.toTop');
-
-    window.addEventListener('scroll', () => {
-        if ( window.pageYOffset > 500){
-            toTop.classList.add('active');
-        } else {
-            toTop.classList.remove('active');
-        }
-    });
-
-toTop.addEventListener('click', () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-});  
-
-// Hamburger menu nav bar
-
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-})
-
-document.querySelectorAll('.navLink').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
-}))
+// Close Mobile Menu When clicking on link
+for(let link of navLink) {
+    link.addEventListener('click', () => {
+        navMenu.classList.remove('nav-active');
+        barTop.classList.remove('rotate-right');
+        barBottom.classList.remove('rotate-left');
+        centerBar.classList.remove('disappear');
+    })
+}
