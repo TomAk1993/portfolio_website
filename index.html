@@ -2,104 +2,181 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Raleway:wght@200&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tom Akoslovski</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="homepage" id="Home" >
-            <nav>
+    <div class="max-width">
+
+        <header>
+            <div class="heading">
                 <h1>Tom Akoslovski</h1>
-                <ul class="nav-menu" >
-                    <li class="navLink" data-link="Home" >Home</li>
-                    <li class="navLink" data-link="Portfolio" >Portfolio</li>
-                    <li class="navLink" data-link="Contact" >Contact</li>
-                </ul>
-                <div class="hamburger" >
-                    <span class="bar" ></span>
-                    <span class="bar" ></span>
-                    <span class="bar" ></span>
+                <nav>
+                    <ul class="nav-menu" id="nav-menu">
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#projects" class="nav-link">Projects</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div id="hamburger">
+                    <div id="bar-one"></div>
+                    <div id="bar-two"></div>
+                    <div id="bar-three"></div>
                 </div>
-            </nav>
-        <div class="homeContainer">
-            <div class="introText">
-                <h2>Hey, I'm Tom 👋</h2>
-                     <h3>I'm a passionate and enthusiastic <span> Web Developer</span> and am always developing my skills to take to the next level, I have excellent HTML, CSS & Javascript skills. <br>
-                    I also have knowledge of NodeJS, MongoDB, Mongoose, Express and React.</h3>
-    
-            <img class="computerimage" src="/portfolio_website/images/code.png" alt="code image">
-            <button id="projectsButton" data-link="Portfolio"  >View my Projects</button>
             </div>
-        </div>   
-    </div>
-
-    <div class="portfolio" id="Portfolio" >
-        <h2>Portfolio</h2>
-        <div class="portfolioContainer">
-            <div class="leftBox">
-                <h3>Score Keeper App</h3>
-                <div class="imageContainer"> 
-
-                    <img src="images/score_keep.jpg" alt="">
+        </header>
 
 
-                </div> 
-                <p>This project is a ping pong game score keeper, in which users can input everytime a player scores up to a max score.</p>
-                <a href="https://tomak1993.github.io/Score-Keeper2">View Live</a>
-                <a href="https://github.com/TomAk1993/Score-Keeper2">GitHub</a>
+
+
+
+
+        <section class="about-section" id="about">
+            <div class="about-photo">
+                    <img height="500px" width="500px" alt="profile photo" src="images/profile.jpg" >
             </div>
-            <div class="centreBox">
+            <div class="about-text">
+                <h2 class="about-title">Front-End Developer</h2>
+                <p class="about-description">Hi, I'm Tom, A passionate Front-end Developer based in Leicester, UK</p>
+                <h3 class="skills-title" >Skills</h3>
+                <div class="about-icons">
 
-                <h3>Drum Machine</h3>
-                <div class="imageContainer"> 
+                    <div class="icon">
+                        <img class="icon-image" width="32" height="35" alt="html logo"  src="images/html2.png" >
+                    </div>
 
-                    <img src="images/drum_machine.jpg" alt="">
+                    <div class="icon">
+                        <img class="icon-image" width="32" height="35" alt="html logo"  src="images/csslogo.png" >
+                    </div>
 
+                    <div class="icon">
+                        <img class="icon-image" width="35" height="35" alt="html logo"  src="images/js.png" >
+                    </div>
+
+                    <div class="icon">
+                        <img class="icon-image" width="32" height="35" alt="html logo"  src="images/react-logo.png" >
+                    </div>
+
+                    <div class="icon">
+                        <img class="icon-image" width="32" height="35" alt="html logo"  src="images/c-logo.png" >
+                    </div>
                 </div>
-                <p>This project is a drum machine, complete with a mixer to change the volume of each drum. Users can play the drum machine by clicking on the drum pads or using the computers keyboard</p>
-
-                <a href="https://tomak1993.github.io/Drum-Machine/">View Live</a>
-                <a href="https://github.com/TomAk1993/Drum-Machine">GitHub</a>
-                
             </div>
-            <div class="rightBox">
-                <h3>Happy Diary Applicationnn</h3>
-                <div class="imageContainer"> 
+        </section>
 
-                    <img src="images/happy_diary.jpg" alt="">
+        <section class="second-section">
 
+            <h2 class="second-title" id="projects" >Portfolio</h2>
+            <p class="second-paragraph">Below are some of the Front End projects I've been working on in my space time</p>
 
-                </div> 
-                <p>This is a diary application that will change the background colour of the page depending on how many possitive or negative words are used.</p>
+            <div class="second-flex-container">
 
-                <a href="https://tomak1993.github.io/happy_diary/">View Live</a>
-                <a href="https://github.com/TomAk1993/happy_diary">GitHub</a>
+                <div class="box">
+                    <img class="project-image" src="images/dividedbyzero.jpg" alt="music landing page website image" >
+                    
+                    <div class="pro-text-box">
+                        <h3 class="pro-number">Project 1</h3>
+                        <h2 class="pro-name">Music Landing Page</h2>
+                        <p class="pro-description">This project is very special to me as its the first website I built and deployed.
+
+                            The website was built using vanilla HTML, CSS and JavaScript. The core languages of the web. 
+                            </p>
+                            <p class="pro-description" >
+                            I am a keen musician and producer as well as a web developer so I build this website to showcase my music.</p>
+                        <div class="line"></div>
+                        <div class="tech-flex">
+                                <img width="32" height="35" alt="html logo"  src="images/html2.png" >
+                                <img width="32" height="35" alt="html logo"  src="images/csslogo.png" >
+                                <img width="35" height="35" alt="html logo"  src="images/js.png" >
+                                <img width="91" height="25" alt="html logo"  src="images/netlify_cropped.png" >
+                        </div>
+
+                        <div class="buttons">
+                            <a target="_blank" class="select-button" href="https://www.dividedbyzeromusic.com/">Live Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img class="project-image" src="images/machine.PNG" alt="music landing page website image" >
+                    
+                    <div class="pro-text-box">
+                        <h3 class="pro-number">Project 2</h3>
+                        <h2 class="pro-name">Drum Machine</h2>
+                        <p class="pro-description">This project is a drum machine, users can trigger the drum sounds via the mouse or keyboard. This was building using HTML, CSS and vanilla javascript and was a very fun poject to build. 
+                            </p>
+                            <p class="pro-description" >
+                            The volume of each drum can be adjusted via the mixer at the bottom of the machine.</p>
+                        <div class="line"></div>
+                        <div class="tech-flex">
+                                <img width="32" height="35" alt="html logo"  src="images/html2.png" >
+                                <img width="32" height="35" alt="html logo"  src="images/csslogo.png" >
+                                <img width="35" height="35" alt="html logo"  src="images/js.png" >
+                        </div>
+
+                        <div class="buttons">
+                            <a class="select-button" href="https://github.com/TomAk1993/Drum-Machine" target="_blank">Git Hub</a>
+                            <a target="_blank" class="select-button" href="https://tomak1993.github.io/Drum-Machine/">Live Website</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img class="project-image" src="images/Diary.PNG" alt="music landing page website image" >
+                    
+                    <div class="pro-text-box">
+                        <h3 class="pro-number">Project 3</h3>
+                        <h2 class="pro-name">Diary Application</h2>
+                        <p class="pro-description">This is a diary entree application where users can make a diary entree. The app will count how many positive or negative words you've used, and warn your if you've used to many negative words.  </p>
+                            <p class="pro-description">The website was built using vanilla HTML, CSS and JavaScript. 
+                            </p>
+                        <div class="line"></div>
+                        <div class="tech-flex">
+                                <img width="32" height="35" alt="html logo"  src="images/html2.png" >
+                                <img width="47" height="35" alt="html logo"  src="images/sass.png" >
+                                <img width="35" height="35" alt="html logo"  src="images/js.png" >
+
+                        </div>
+
+                        <div class="buttons">
+                            <a class="select-button" href="https://github.com/TomAk1993/happy_diary" target="_blank">Git Hub</a>
+                            <a target="_blank" class="select-button" href="https://tomak1993.github.io/happy_diary/">Live Website</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="contact" id="Contact">
+        <div class="contact-container">  
 
-        <h2>Contact</h2>
-            <form id="contact-form">
 
-                <input type="hidden" name="contact_number">
-                <input type="text" name="user_name" placeholder="Full Name" required>
-                <input type="email"  name="user_email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="10"></textarea>
-                <input type="submit" value="Send" class="emailButton">
+
+
+            <form id="contact" action="" method="post">
+              <h3>Contact Me</h3>
+
+              <input type="hidden" name="contact_number">
+
+                <input name="user_name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+
+                <input name="user_email" placeholder="Your Email Address" type="email" tabindex="2" required>
+
+                <textarea name="message" placeholder="Type your Message Here...." tabindex="5" required></textarea>
+
+                <button value="Send" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
             </form>
+          
+          </div>
 
-    </div>
 
-    <div class="toTop">
-        <p>&#8679;</p>
+
+
+
     </div>
     <script src="script.js"></script>
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
@@ -108,10 +185,10 @@
     </script>
     <script type="text/javascript">
         window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+            document.getElementById('contact').addEventListener('submit', function(event) {
                 event.preventDefault();
                 this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm("service_zmasrvh","template_lrh2ppo", this)
+                emailjs.sendForm("service_oyu0ysf","template_lrh2ppo", this)
                     .then(function() {
                         console.log('SUCCESS!');
                         alert('Email Sent')
