@@ -22,3 +22,80 @@ for(let link of navLink) {
         centerBar.classList.remove('disappear');
     })
 }
+
+
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', () => {
+    let scroll = window.scrollY;
+
+    if (scroll > 2000) {
+        backToTop.classList.add('top-button');
+    } else {
+        backToTop.classList.remove('top-button');
+    }
+})
+
+backToTop.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+})
+
+
+
+// Reveals
+
+window.addEventListener('load', revealUpLoad);
+window.addEventListener('load', revealLoad);
+
+function revealUpLoad() {
+    const reveals = document.querySelectorAll('.reveal-up-load');
+    for(let i = 0; i < reveals.length; i++){
+            reveals[i].classList.add('active') 
+    }
+}
+
+function revealLoad() {
+    const reveals = document.querySelectorAll('.reveal-load');
+    for(let i = 0; i < reveals.length; i++){
+        reveals[i].classList.add('active') 
+    }
+}
+
+window.addEventListener('scroll', revealUp);
+function revealUp() {
+    const reveals = document.querySelectorAll('.reveal-up');
+    for(let i = 0; i < reveals.length; i++){
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 0;
+        if(revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active') 
+        }
+    }
+}
+
+window.addEventListener('scroll', reveal);
+function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
+    for(let i = 0; i < reveals.length; i++){
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 0;
+        if(revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active') 
+        }
+    }
+}
+
+window.addEventListener('scroll', revealShort);
+function revealShort() {
+    const reveals = document.querySelectorAll('.reveal-up-short');
+    for(let i = 0; i < reveals.length; i++){
+        let windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 0;
+        if(revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active') 
+        }
+    }
+}
