@@ -638,6 +638,12 @@ justify-content: center;
 }
 
 @media (max-width: 767px) {
+    .tech-card {
+        width: 150px;
+    }
+    .about-section {
+        margin: 2.5rem 0;
+    }
     #hamburger {
         height: 20px;
         width: 30px;
@@ -669,11 +675,14 @@ justify-content: center;
     }
     .about-title, .experience-title, .tech-title, .portfolio-section-title {
         font-size: 3rem;
-        transition: 500ms;
+        transition: 250ms;
+    }
+    .about-title {
+        margin-top: 0;
     }
     .about-photo img {
         width: 300px;
-        transition: 500ms;
+        transition: 250ms;
     }
 }
 
